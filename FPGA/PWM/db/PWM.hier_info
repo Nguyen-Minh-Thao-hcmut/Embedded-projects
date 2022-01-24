@@ -1,0 +1,263 @@
+|PWM
+PWM_out <= lpm_compare1:inst3.alb
+CLK => lpm_counter0:inst.clock
+compare1 <= lpm_compare0:inst1.ageb
+T[0] => lpm_compare0:inst1.datab[0]
+T[1] => lpm_compare0:inst1.datab[1]
+T[2] => lpm_compare0:inst1.datab[2]
+T[3] => lpm_compare0:inst1.datab[3]
+T[4] => lpm_compare0:inst1.datab[4]
+T[5] => lpm_compare0:inst1.datab[5]
+T[6] => lpm_compare0:inst1.datab[6]
+T[7] => lpm_compare0:inst1.datab[7]
+Ton[0] => lpm_compare1:inst3.datab[0]
+Ton[1] => lpm_compare1:inst3.datab[1]
+Ton[2] => lpm_compare1:inst3.datab[2]
+Ton[3] => lpm_compare1:inst3.datab[3]
+Ton[4] => lpm_compare1:inst3.datab[4]
+Ton[5] => lpm_compare1:inst3.datab[5]
+Ton[6] => lpm_compare1:inst3.datab[6]
+Ton[7] => lpm_compare1:inst3.datab[7]
+
+
+|PWM|lpm_compare1:inst3
+dataa[0] => lpm_compare:lpm_compare_component.dataa[0]
+dataa[1] => lpm_compare:lpm_compare_component.dataa[1]
+dataa[2] => lpm_compare:lpm_compare_component.dataa[2]
+dataa[3] => lpm_compare:lpm_compare_component.dataa[3]
+dataa[4] => lpm_compare:lpm_compare_component.dataa[4]
+dataa[5] => lpm_compare:lpm_compare_component.dataa[5]
+dataa[6] => lpm_compare:lpm_compare_component.dataa[6]
+dataa[7] => lpm_compare:lpm_compare_component.dataa[7]
+datab[0] => lpm_compare:lpm_compare_component.datab[0]
+datab[1] => lpm_compare:lpm_compare_component.datab[1]
+datab[2] => lpm_compare:lpm_compare_component.datab[2]
+datab[3] => lpm_compare:lpm_compare_component.datab[3]
+datab[4] => lpm_compare:lpm_compare_component.datab[4]
+datab[5] => lpm_compare:lpm_compare_component.datab[5]
+datab[6] => lpm_compare:lpm_compare_component.datab[6]
+datab[7] => lpm_compare:lpm_compare_component.datab[7]
+alb <= lpm_compare:lpm_compare_component.alb
+
+
+|PWM|lpm_compare1:inst3|lpm_compare:lpm_compare_component
+dataa[0] => cmpr_d4g:auto_generated.dataa[0]
+dataa[1] => cmpr_d4g:auto_generated.dataa[1]
+dataa[2] => cmpr_d4g:auto_generated.dataa[2]
+dataa[3] => cmpr_d4g:auto_generated.dataa[3]
+dataa[4] => cmpr_d4g:auto_generated.dataa[4]
+dataa[5] => cmpr_d4g:auto_generated.dataa[5]
+dataa[6] => cmpr_d4g:auto_generated.dataa[6]
+dataa[7] => cmpr_d4g:auto_generated.dataa[7]
+datab[0] => cmpr_d4g:auto_generated.datab[0]
+datab[1] => cmpr_d4g:auto_generated.datab[1]
+datab[2] => cmpr_d4g:auto_generated.datab[2]
+datab[3] => cmpr_d4g:auto_generated.datab[3]
+datab[4] => cmpr_d4g:auto_generated.datab[4]
+datab[5] => cmpr_d4g:auto_generated.datab[5]
+datab[6] => cmpr_d4g:auto_generated.datab[6]
+datab[7] => cmpr_d4g:auto_generated.datab[7]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+alb <= cmpr_d4g:auto_generated.alb
+aeb <= <GND>
+agb <= <GND>
+aleb <= <GND>
+aneb <= <GND>
+ageb <= <GND>
+
+
+|PWM|lpm_compare1:inst3|lpm_compare:lpm_compare_component|cmpr_d4g:auto_generated
+alb <= alb_int.DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => op_1.IN15
+dataa[1] => op_1.IN13
+dataa[2] => op_1.IN11
+dataa[3] => op_1.IN9
+dataa[4] => op_1.IN7
+dataa[5] => op_1.IN5
+dataa[6] => op_1.IN3
+dataa[7] => op_1.IN1
+datab[0] => op_1.IN16
+datab[1] => op_1.IN14
+datab[2] => op_1.IN12
+datab[3] => op_1.IN10
+datab[4] => op_1.IN8
+datab[5] => op_1.IN6
+datab[6] => op_1.IN4
+datab[7] => op_1.IN2
+
+
+|PWM|lpm_counter0:inst
+aclr => lpm_counter:lpm_counter_component.aclr
+clock => lpm_counter:lpm_counter_component.clock
+q[0] <= lpm_counter:lpm_counter_component.q[0]
+q[1] <= lpm_counter:lpm_counter_component.q[1]
+q[2] <= lpm_counter:lpm_counter_component.q[2]
+q[3] <= lpm_counter:lpm_counter_component.q[3]
+q[4] <= lpm_counter:lpm_counter_component.q[4]
+q[5] <= lpm_counter:lpm_counter_component.q[5]
+q[6] <= lpm_counter:lpm_counter_component.q[6]
+q[7] <= lpm_counter:lpm_counter_component.q[7]
+
+
+|PWM|lpm_counter0:inst|lpm_counter:lpm_counter_component
+clock => cntr_nlh:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => cntr_nlh:auto_generated.aclr
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data[4] => ~NO_FANOUT~
+data[5] => ~NO_FANOUT~
+data[6] => ~NO_FANOUT~
+data[7] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_nlh:auto_generated.q[0]
+q[1] <= cntr_nlh:auto_generated.q[1]
+q[2] <= cntr_nlh:auto_generated.q[2]
+q[3] <= cntr_nlh:auto_generated.q[3]
+q[4] <= cntr_nlh:auto_generated.q[4]
+q[5] <= cntr_nlh:auto_generated.q[5]
+q[6] <= cntr_nlh:auto_generated.q[6]
+q[7] <= cntr_nlh:auto_generated.q[7]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|PWM|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated
+aclr => counter_cella0.ACLR
+aclr => counter_cella1.ACLR
+aclr => counter_cella2.ACLR
+aclr => counter_cella3.ACLR
+aclr => counter_cella4.ACLR
+aclr => counter_cella5.ACLR
+aclr => counter_cella6.ACLR
+aclr => counter_cella7.ACLR
+clock => counter_cella0.CLK
+clock => counter_cella1.CLK
+clock => counter_cella2.CLK
+clock => counter_cella3.CLK
+clock => counter_cella4.CLK
+clock => counter_cella5.CLK
+clock => counter_cella6.CLK
+clock => counter_cella7.CLK
+q[0] <= counter_cella0.REGOUT
+q[1] <= counter_cella1.REGOUT
+q[2] <= counter_cella2.REGOUT
+q[3] <= counter_cella3.REGOUT
+q[4] <= counter_cella4.REGOUT
+q[5] <= counter_cella5.REGOUT
+q[6] <= counter_cella6.REGOUT
+q[7] <= counter_cella7.REGOUT
+
+
+|PWM|lpm_compare0:inst1
+dataa[0] => lpm_compare:lpm_compare_component.dataa[0]
+dataa[1] => lpm_compare:lpm_compare_component.dataa[1]
+dataa[2] => lpm_compare:lpm_compare_component.dataa[2]
+dataa[3] => lpm_compare:lpm_compare_component.dataa[3]
+dataa[4] => lpm_compare:lpm_compare_component.dataa[4]
+dataa[5] => lpm_compare:lpm_compare_component.dataa[5]
+dataa[6] => lpm_compare:lpm_compare_component.dataa[6]
+dataa[7] => lpm_compare:lpm_compare_component.dataa[7]
+datab[0] => lpm_compare:lpm_compare_component.datab[0]
+datab[1] => lpm_compare:lpm_compare_component.datab[1]
+datab[2] => lpm_compare:lpm_compare_component.datab[2]
+datab[3] => lpm_compare:lpm_compare_component.datab[3]
+datab[4] => lpm_compare:lpm_compare_component.datab[4]
+datab[5] => lpm_compare:lpm_compare_component.datab[5]
+datab[6] => lpm_compare:lpm_compare_component.datab[6]
+datab[7] => lpm_compare:lpm_compare_component.datab[7]
+ageb <= lpm_compare:lpm_compare_component.ageb
+
+
+|PWM|lpm_compare0:inst1|lpm_compare:lpm_compare_component
+dataa[0] => cmpr_d7g:auto_generated.dataa[0]
+dataa[1] => cmpr_d7g:auto_generated.dataa[1]
+dataa[2] => cmpr_d7g:auto_generated.dataa[2]
+dataa[3] => cmpr_d7g:auto_generated.dataa[3]
+dataa[4] => cmpr_d7g:auto_generated.dataa[4]
+dataa[5] => cmpr_d7g:auto_generated.dataa[5]
+dataa[6] => cmpr_d7g:auto_generated.dataa[6]
+dataa[7] => cmpr_d7g:auto_generated.dataa[7]
+datab[0] => cmpr_d7g:auto_generated.datab[0]
+datab[1] => cmpr_d7g:auto_generated.datab[1]
+datab[2] => cmpr_d7g:auto_generated.datab[2]
+datab[3] => cmpr_d7g:auto_generated.datab[3]
+datab[4] => cmpr_d7g:auto_generated.datab[4]
+datab[5] => cmpr_d7g:auto_generated.datab[5]
+datab[6] => cmpr_d7g:auto_generated.datab[6]
+datab[7] => cmpr_d7g:auto_generated.datab[7]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+alb <= <GND>
+aeb <= <GND>
+agb <= <GND>
+aleb <= <GND>
+aneb <= <GND>
+ageb <= cmpr_d7g:auto_generated.ageb
+
+
+|PWM|lpm_compare0:inst1|lpm_compare:lpm_compare_component|cmpr_d7g:auto_generated
+ageb <= ageb.DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => _.IN0
+dataa[0] => op_1.IN16
+dataa[1] => _.IN0
+dataa[1] => op_1.IN14
+dataa[2] => _.IN0
+dataa[2] => op_1.IN12
+dataa[3] => _.IN0
+dataa[3] => op_1.IN10
+dataa[4] => _.IN0
+dataa[4] => op_1.IN8
+dataa[5] => _.IN0
+dataa[5] => op_1.IN6
+dataa[6] => _.IN0
+dataa[6] => op_1.IN4
+dataa[7] => _.IN0
+dataa[7] => op_1.IN2
+datab[0] => _.IN1
+datab[0] => op_1.IN15
+datab[1] => _.IN1
+datab[1] => op_1.IN13
+datab[2] => _.IN1
+datab[2] => op_1.IN11
+datab[3] => _.IN1
+datab[3] => op_1.IN9
+datab[4] => _.IN1
+datab[4] => op_1.IN7
+datab[5] => _.IN1
+datab[5] => op_1.IN5
+datab[6] => _.IN1
+datab[6] => op_1.IN3
+datab[7] => _.IN1
+datab[7] => op_1.IN1
+
+

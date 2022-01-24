@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="PWM">
+		<CBX_INST_ENTRY INSTANCE_NAME="|PWM|lpm_compare0:inst1|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_d7g.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PWM|lpm_compare1:inst3|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_d4g.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PWM|lpm_counter0:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_nlh.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
